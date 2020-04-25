@@ -36,6 +36,7 @@
 @include('includes.admin.header')
 @include('includes.admin.sidebar')
 @yield('konten')
+@include('includes.admin.footer')
 
   <!-- jQuery -->
   <script src="{{ asset('admin/plugins/jquery/jquery.min.js') }}"></script>

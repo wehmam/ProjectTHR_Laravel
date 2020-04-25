@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Route::prefix('/admin')->group(function (){
-    Route::get('/gaji', 'Admin\GajiController@index');
+    Route::get('/gaji', 'Admin\GajiController@index')->name('gaji');
 });

@@ -53,8 +53,8 @@
   <!-- Sparkline -->
   <script src="{{ asset('admin/plugins/sparklines/sparkline.js') }}"></script>
   <!-- JQVMap -->
-  <!-- <script src="plugins/jqvmap/jquery.vmap.min.js"></script> -->
-  <!-- <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script> -->
+  {{-- <script src="{{ asset('admin/plugins/jqvmap/jquery.vmap.min.js') }}"></script> --}}
+  {{-- <script src="{{ asset('admin/plugins/jqvmap/maps/jquery.vmap.usa.js') }}"></script> --}}
   <!-- jQuery Knob Chart -->
   <script src="{{ asset('admin/plugins/jquery-knob/jquery.knob.min.js') }}"></script>
   <!-- daterangepicker -->
@@ -81,17 +81,6 @@
   <script src="{{ asset('admin/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
   <script>
     $('#example2').DataTable({
-      "paging": true,
-      "lengthChange": false,
-      "searching": false,
-      "ordering": true,
-      "info": true,
-      "autoWidth": false,
-      "responsive": true,
-    });
-
-// apd
-    $('#apd2').DataTable({
       "paging": true,
       "lengthChange": false,
       "searching": false,

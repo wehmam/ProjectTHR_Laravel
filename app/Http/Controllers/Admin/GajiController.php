@@ -8,28 +8,29 @@ use Illuminate\Http\Request;
 class GajiController extends Controller
 {
     public function index(){
-        $karyawan = [
-                    "karyawan1" => [1,'Susi','SPG','1 Tahun',4000000],
-                    "karyawan2" => [2,'Susan','SPG','1 Tahun',4000000],
-                    "karyawan3" => [3,'Sarah','SPG','1 Tahun',4000000],
-                    "karyawan4" => [4,'Sisi','SPG','1 Tahun',4000000],
-                    "karyawan5" => [5,'Sari','SPG','1 Tahun',4000000]
-                    ];
 
-        // $pegawai = [
-        //             "pegawai4" => [6,'Budi','SPV',5000000],
-        //             "pegawai5" => [7,'Ari','SPV',5000000],
-        //             "pegawai6" => [8,'Joko','SPV',5000000]
-        //         ];
-
-        // $pekerja = [
-        //             "pekerja7" => [6,'Budi','Manager',10000000],
-        //             "pekerja8" => [7,'Ari','Manager',10000000],
-        //             "pekerja9" => [8,'Joko','Manager',10000000]
-        //         ];
-
-        // $semuaData = $karyawan + $pegawai + $pekerja;
-        // return view('penggajian',compact('karyawan','pekerja','pegawai','semuaData'));
+        $karyawanCollect = collect([
+            'karyawan1'=> [101,'Susi','SPG',1,4000000],
+            'karyawan2'=> [201,'Susan','Marketing',3,4000000],
+            'karyawan3'=> [301,'Sarah','HRD',5,4000000],
+            'karyawan4'=> [401,'Sisi','Admin',10,4000000],
+            'karyawan5'=> [502,'Sari','SPG',2,4000000],
+            'karyawan6'=> [609,'Imam','Backend Developer',10,20000000],
+            'karyawan7'=> [790,'Fadjar','UI/UX',10,25000000],
+            'karyawan8'=> [819,'Habib Ganteng','CEO',8,40000000],
+            'karyawan9'=> [129,'ryan','Mobile Developer',10,15000000],
+            'karyawan10'=> [130,'Ryo','SPG',10,10000000]
+        ]);
+        // dd($karyawanCollect->all());
+        $karyawanB = [
+            'karyawan11'=> [601,'Imam','Backend Developer',10,20000000],
+            'karyawan12'=>[721,'Fadjar','UI/UX',7,25000000],
+            'karyawan13'=>[128,'Habib Ganteng','CEO',8,40000000],
+            'karyawan14'=>[149,'ryan','Mobile Developer',10,15000000],
+            'karyawan15'=> [120,'Ryo','SPG',10,10000000]
+        ];
+        $karyawan = $karyawanCollect->all() + $karyawanB;
+        
         return view('pages.admin.gaji', compact('karyawan'));
     }
 }

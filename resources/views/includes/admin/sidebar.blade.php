@@ -38,7 +38,7 @@
                   <p>data 1</p>
                 </a>
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a href="" class="nav-link @yield('data2')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data 2</p>
@@ -49,7 +49,7 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data 3</p>
                 </a>
-              </li>
+              </li> --}}
             </ul>
           </li>
         </ul>

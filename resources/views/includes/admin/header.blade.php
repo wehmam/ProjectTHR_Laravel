@@ -7,11 +7,11 @@
       <li class="nav-item d-none d-sm-inline-block">
         <a href="" class="nav-link">data 1</a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
+      {{-- <li class="nav-item d-none d-sm-inline-block">
         <a href="" class="nav-link">data 2</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="" class="nav-link">data 2</a>
-      </li>
+        <a href="" class="nav-link">data 2</a> --}}
+      {{-- </li> --}}
     </ul>
   </nav>
